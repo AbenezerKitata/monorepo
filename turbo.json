@@ -1,6 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
+  "globalPassThroughEnv": ["NEXT_PUBLIC_SANITY_PROJECT_ID ","NEXT_PUBLIC_SANITY_DATASET", "NEXT_PUBLIC_SANITY_API_VERSION" ],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
